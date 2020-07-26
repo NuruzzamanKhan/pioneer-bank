@@ -45,7 +45,7 @@
                 <div class="submit-area">
                     <h4>Deposit</h4>
                     <input type="text" class="form-control" placeholder="$ amount you want to deposit">
-                    <button class="btn btn-success mt-4">Deposit</button>
+                    <button class="btn btn-success mt-4" id="addDeposit">Deposit</button>
                 </div>
             </div>
             <div class="col-md-6">
@@ -57,6 +57,8 @@
             </div>
         </div>
     </div>
+
+
     <script>
         const loginBtn = document.getElementById('login');
         loginBtn.addEventListener("click", function(){
@@ -64,7 +66,14 @@
             logInArea.style.display = "none"
             const transactionArea = document.getElementById("transaction-area");
             transactionArea.style.display = "block";
+        });
+
+        //Deposit button even handler
+        const depositBtn = getElementById('addDeposit');
+        depositBtn.addEventListener("click", function(){
+            console.log("Deposit Clicked");
         })
+
         
     </script>
 </body>
